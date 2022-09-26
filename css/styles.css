@@ -1,0 +1,78 @@
+/* @font-face {
+  font-family: pay-fonts-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'pay-fonts-regular';
+  src: url(../fonts/OpenSans-Regular.ttf);
+} */
+/* #303030, */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #303030;
+}
+* {
+  box-sizing: border-box;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* ---------------HEADER------------------ */
+.header {
+  background-color: grey;
+}
+.header-link {
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-tel {
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+.header-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* ---------------HERO------------------ */
+.hero-link {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+.hero-pre-title {
+  font-size: 11px;
+  line-height: 1.36px;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 72px;
+  line-height: calc(85 / 72);
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.hero-after-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ---------------ABOUT------------------ */
+
+/* ---------------PRICE------------------ */
