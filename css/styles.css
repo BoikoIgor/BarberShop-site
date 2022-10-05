@@ -19,7 +19,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   font-size: 12px;
-  color: #303030;
+  color: var(--second-title-color);
 }
 * {
   box-sizing: border-box;
@@ -64,7 +64,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.header-list .current {
+.header-link.current {
   color: var(--accent-color);
 }
 /* ---------------HEADER------------------ */
@@ -84,13 +84,7 @@ body {
   color: var(--accent-color);
 }
 
-.header-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+.header-btn.btn {
   color: var(--main-btn-color);
 }
 /* ---------------HERO------------------ */
@@ -102,24 +96,18 @@ body {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-  color: #303030;
+  color: var(--second-btn-color);
 }
 .hero-link:hover,
 .hero-link:focus {
   color: var(--accent-color);
 }
 .hero-pre-title {
-  font-size: 11px;
-  line-height: 1.36px;
-  text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
 }
 .hero-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 72px;
   line-height: calc(85 / 72);
-  letter-spacing: 0.05em;
   color: #ffffff;
 }
 .hero-after-title {
@@ -130,17 +118,9 @@ body {
 }
 /* ---------------ABOUT------------------ */
 .about-pre-title {
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
   color: var(--second-title-color);
 }
 .about-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--second-title-color);
 }
 .about-after-title {
@@ -157,12 +137,6 @@ body {
   color: var(--third-title-color);
 }
 .about-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--second-title-color);
 }
 /* ---------------PRICE------------------ */
@@ -170,17 +144,9 @@ body {
   background: gray;
 }
 .prices-pre-title {
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
   color: var(--second-title-color);
 }
 .prices-title {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
   color: var(--main-title-color);
 }
 .prices-list {
@@ -194,19 +160,9 @@ body {
   color: #9da4bd;
 }
 .prices-btn {
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--main-btn-color);
 }
 /* -------------BENEFITS----------- */
-.benefits {
-}
-.benefits-list {
-}
 .benefits-item span {
   font-weight: 700;
   font-size: 42px;
@@ -222,10 +178,6 @@ body {
   color: var(--second-title-color);
 }
 .benefits-pre-title {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
   color: var(--second-title-color);
 }
 .benefits-title {
@@ -243,17 +195,13 @@ body {
 .barbers-title {
   color: var(--second-title-color);
 }
-.barbers-list {
-}
-.barbers-item {
-}
 .barbers-item-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.39;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #303030;
+  color: var(--second-title-color);
 }
 .barbers-item-text {
   font-size: 14px;
@@ -262,17 +210,20 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
-/* -----GALLERY------ */
-.gallery-list {
+/* ---------GALLERY----------- */
+.gallery-pre-title {
+  color: var(--second-title-color);
 }
-.gallery-item {
-}
-/* -------- */
+/* ----------ONLINE---------- */
 .online {
+  background-color: #303030;
 }
 .online-title {
+  color: var(--main-title-color);
 }
+/* ----------CONTACTS---------- */
 .contacts {
+  background-color: #303030;
 }
 .contacts-title {
   color: var(--main-title-color);
@@ -281,10 +232,21 @@ body {
   font-style: normal;
 }
 .contacts-map-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 .contacts-list {
 }
 .contacts-item {
+}
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 .contacts-subtitle {
   font-weight: 600;
@@ -294,4 +256,8 @@ body {
   color: var(--main-title-color);
 }
 .contacts-schedule {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
