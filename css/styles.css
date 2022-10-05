@@ -15,6 +15,29 @@
   --second-btn-color: #303030;
   --accent-color: #ff6c00;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -52,6 +75,16 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -70,6 +103,8 @@ body {
 /* ---------------HEADER------------------ */
 .header {
   background-color: grey;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link,
 .header-tel {
@@ -83,7 +118,6 @@ body {
 .header-tel:focus {
   color: var(--accent-color);
 }
-
 .header-btn.btn {
   color: var(--main-btn-color);
 }
@@ -117,11 +151,14 @@ body {
   color: #9da4bd;
 }
 /* ---------------ABOUT------------------ */
+
 .about-pre-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .about-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .about-after-title {
   font-weight: 400;
@@ -129,12 +166,14 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--third-title-color);
+  margin-bottom: 20px;
 }
 .about-text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--third-title-color);
+  margin-bottom: 42px;
 }
 .about-btn {
   color: var(--second-title-color);
@@ -150,6 +189,8 @@ body {
   color: var(--main-title-color);
 }
 .prices-list {
+  border: 1px solid var(--main-title-color);
+  padding: 30px 20px;
 }
 .prices-item {
 }
@@ -161,8 +202,16 @@ body {
 }
 .prices-btn {
   color: var(--main-btn-color);
+  margin: 0 auto;
+  display: block;
+  margin-top: 44px;
 }
 /* -------------BENEFITS----------- */
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+}
 .benefits-item span {
   font-weight: 700;
   font-size: 42px;
@@ -191,9 +240,11 @@ body {
 /* --------BARBERS------- */
 .barbers-pre-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 .barbers-title {
   color: var(--second-title-color);
+  margin-bottom: 44px;
 }
 .barbers-item-title {
   font-weight: 400;
@@ -202,6 +253,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
+  margin-bottom: 8px;
 }
 .barbers-item-text {
   font-size: 14px;
@@ -210,9 +262,13 @@ body {
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
+.barber-wrap {
+  padding-top: 30px;
+}
 /* ---------GALLERY----------- */
 .gallery-pre-title {
   color: var(--second-title-color);
+  margin-bottom: 20px;
 }
 /* ----------ONLINE---------- */
 .online {
@@ -227,9 +283,11 @@ body {
 }
 .contacts-title {
   color: var(--main-title-color);
+  margin-bottom: 40px;
 }
 .contacts-address {
   font-style: normal;
+  margin-bottom: 70px;
 }
 .contacts-map-link {
   font-weight: 700;
@@ -237,10 +295,13 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .contacts-list {
 }
-.contacts-item {
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .contacts-link {
   font-size: 18px;
@@ -254,10 +315,28 @@ body {
   line-height: 1.36;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 20px;
 }
 .contacts-schedule {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  margin-bottom: 20px;
+}
+/* ----------FOOTER---------- */
+footer {
+  padding: 56px 0;
+}
+.footer-item {
+}
+.footer-link {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--second-btn-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent-color);
 }
