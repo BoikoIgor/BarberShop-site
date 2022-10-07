@@ -68,12 +68,15 @@ body {
   text-transform: uppercase;
 }
 .btn {
+  min-width: 160px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
 }
 .section {
   padding-top: 120px;
@@ -106,6 +109,27 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.header-list {
+  display: flex;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 131px;
+}
+.header-connect {
+  margin-left: auto;
+}
+.header-list {
+  display: flex;
+  gap: 30px;
+}
 .header-link,
 .header-tel {
   line-height: 1.33;
@@ -120,12 +144,20 @@ body {
 }
 .header-btn.btn {
   color: var(--main-btn-color);
+  margin-left: 43px;
 }
 /* ---------------HERO------------------ */
 .hero {
   background-color: #3d3e45;
 }
-
+.hero .container {
+  display: flex;
+}
+.hero-list {
+  width: 100px;
+}
+.hero-wrap {
+}
 .hero-link {
   font-size: 11px;
   line-height: 1.36;
@@ -156,6 +188,14 @@ body {
   color: var(--second-title-color);
   margin-bottom: 20px;
 }
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+.about-container {
+  display: flex;
+}
+
 .about-title {
   color: var(--second-title-color);
   margin-bottom: 20px;
@@ -193,6 +233,8 @@ body {
   padding: 30px 20px;
 }
 .prices-item {
+  display: flex;
+  justify-content: space-between;
 }
 .prices-list-text {
   font-size: 18px;
@@ -205,6 +247,11 @@ body {
   margin: 0 auto;
   display: block;
   margin-top: 44px;
+}
+.prices-wrap {
+  display: flex;
+  padding: 30px 20px;
+  width: calc((100%-30px) / 2);
 }
 /* -------------BENEFITS----------- */
 .benefits-item {
