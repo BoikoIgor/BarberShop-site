@@ -17,16 +17,26 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="site-body">
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a class="header-logo" href="./index.html"><img class="header-logo-icon" src="./img/logo.svg" alt="site logo" /></a>
+          <a href="" class="header-logo">
+            <img class="header-logo-icon" src="./img/logo.svg" alt="site logo" />
+          </a>
           <ul class="header-list list">
-            <li class="header-item"><a class="header-link link current" href="#about">About</a></li>
-            <li class="header-item"><a class="header-link link" href="#prices">Services and prices</a></li>
-            <li class="header-item"><a class="header-link link" href="#barbers">Barbers</a></li>
-            <li class="header-item"><a class="header-link link" href="#contacts">Contacts</a></li>
+            <li class="header-item">
+              <a class="header-link link current" href="https://www.google.com/">About</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#prices">Services and prices</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="#barbers">Barbers</a>
+            </li>
+            <li class="header-item">
+              <a class="header-link link" href="https://www.google.com/">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="header-connect">
@@ -35,45 +45,49 @@
         </div>
       </div>
     </header>
-
     <main>
       <section class="hero">
-        <div class="container">
+        <div class="container hero-container">
           <ul class="hero-list list">
-            <li class="hero-item">
-              <a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
-            </li>
             <li class="hero-item">
               <a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Instagram</a>
             </li>
+            <li class="hero-item">
+              <a class="hero-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
+            </li>
           </ul>
-          <p class="hero-pre-title">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title section-title">BarberShop</h1>
-          <p class="hero-after-title">We are experts in trendy men’s haircuts.</p>
-          <p class="hero-after-title">We work quickly, carefully and with style.</p>
+          <div class="hero-wrap">
+            <p class="hero-pre-title pre-title">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-after-title">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+          </div>
         </div>
       </section>
-      <section class="about section" id="about">
+      <section class="about section">
         <div class="container about-container">
           <ul class="about-list list">
-            <li class="about-item"><img src="./img/about-img-1.jpg" alt="haircut" width="270" height="445" /></li>
-            <li class="about-item"><img src="./img/about-img-2.jpg" alt="haircut" width="270" height="445" /></li>
+            <li class="about-item">
+              <img src="./img/about-img-1.jpg" alt="haircut" width="270" height="445" />
+            </li>
+            <li class="about-item">
+              <img src="./img/about-img-2.jpg" alt="haircut" width="270" height="445" />
+            </li>
           </ul>
           <div class="about-wrap">
-            <p class="about-pre-title">About</p>
+            <p class="about-pre-title pre-title">About</p>
             <h2 class="about-title section-title">Best Barbershop in your city</h2>
             <p class="about-after-title">If you want to add more confidence to your image, you should definitely visit us.</p>
             <p class="about-text">
               We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that
               is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn">Online-booking</button>
+            <button type="button" class="about-btn btn">Online-booking</button>
           </div>
         </div>
       </section>
       <section class="prices section" id="prices">
         <div class="container">
-          <p class="prices-pre-title">Spend your time with the best masters</p>
+          <p class="prices-pre-title pre-title">Spend your time with the best masters</p>
           <h2 class="prices-title section-title">Services and prices</h2>
           <div class="prices-wrap">
             <ul class="prices-list list">
@@ -112,15 +126,15 @@
                 <p class="prices-list-text">from 200 uah.</p>
               </li>
             </ul>
-          
-          <button type="button" class="prices-btn">Online-booking</button>
+          </div>
+          <button type="button" class="prices-btn btn">Online-booking</button>
         </div>
       </section>
       <section class="benefits section">
         <div class="container">
           <ul class="benefits-list list">
             <li class="benefits-item">
-              <span>600</span>
+              <span class="digit">600</span>
               <p class="benefits-item-text">Satisfied customers per day</p>
             </li>
             <li class="benefits-item">
@@ -145,23 +159,24 @@
         <div class="container">
           <p class="barbers-pre-title pre-title">For true enjoyers of the atmosphere</p>
           <h2 class="barbers-title section-title">Our barbers</h2>
+
           <ul class="barbers-list list">
             <li class="barbers-item">
-              <img src="./img/barbers/barbers-img-1.jpg" alt="Barber" width="370" height="346" />
+              <img src="./img/barbers/barbers-img-1.jpg" alt="haircut" width="370" height="346" />
               <div class="barbers-wrap">
                 <h3 class="barbers-item-title">John Smith</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
               </div>
             </li>
             <li class="barbers-item">
-              <img src="./img/barbers/barbers-img-2.jpg" alt="Barber" width="370" height="346" />
+              <img src="./img/barbers/barbers-img-2.jpg" alt="haircut" width="370" height="346" />
               <div class="barbers-wrap">
                 <h3 class="barbers-item-title">Michele Doe</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
               </div>
             </li>
             <li class="barbers-item">
-              <img src="./img/barbers/barbers-img-3.jpg" alt="Barber" width="370" height="346" />
+              <img src="./img/barbers/barbers-img-3.jpg" alt="haircut" width="370" height="346" />
               <div class="barbers-wrap">
                 <h3 class="barbers-item-title">Alan Black</h3>
                 <p class="barbers-item-text">Extreme Barber</p>
@@ -172,32 +187,45 @@
       </section>
       <section class="gallery section">
         <div class="container">
-          <h2 class="visually-hidden">Gallery</h2>
           <p class="gallery-pre-title pre-title">In Latin, "barba" means "beard"</p>
+          <h2 class="visually-hidden">Gallery</h2>
           <ul class="gallery-list list">
-            <li class="gallery-item"><img src="./img/gallery/gallery-1.jpg" alt="in barbershop people working" width="270" height="360" /></li>
-            <li class="gallery-item"><img src="./img/gallery/gallery-2.jpg" alt="in barbershop people working" width="270" height="360" /></li>
-            <li class="gallery-item"><img src="./img/gallery/gallery-3.jpg" alt="in barbershop people working" width="270" height="360" /></li>
-            <li class="gallery-item"><img src="./img/gallery/gallery-4.jpg" alt="in barbershop people working" width="270" height="360" /></li>
+            <li class="gallery-item">
+              <img src="./img/gallery/gallery-1.jpg" alt="haircut" width="270" height="360" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/gallery/gallery-2.jpg" alt="haircut" width="270" height="360" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/gallery/gallery-3.jpg" alt="haircut" width="270" height="360" />
+            </li>
+            <li class="gallery-item">
+              <img src="./img/gallery/gallery-4.jpg" alt="haircut" width="270" height="360" />
+            </li>
           </ul>
         </div>
       </section>
       <section class="online section">
-        <div class="container"><h2 class="online-title section-title">Online-booking</h2></div>
+        <h2 class="online-title section-title">Online-booking</h2>
       </section>
-      <section class="contacts section" id="contacts">
-        <div class="container">
-          <h2 class="contacts-title section-title">Contacts</h2>
-          <address class="contacts-address">
-            <a class="contacts-map-link link" href="https://goo.gl/maps/LSCf5TGC6Toj6bdn7" target="_blank" rel="noopener noreferrer nofollow">st. Vasilkivska, 7A<br />Kyiv, 08132</a>
-            <ul class="contacts-list">
-              <li class="contacts-item"><a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a></li>
-              <li class="contacts-item"><a class="contacts-link link" href="mailto:barbershop@email.com">barbershop@email.com</a></li>
-            </ul>
-          </address>
-          <p class="contacts-subtitle">Working hours</p>
-          <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
-        </div>
+      <section class="contacts section">
+        <h2 class="contacts-title section-title">Contacts</h2>
+        <address class="contacts-address">
+          <a class="contacts-map-link link" href="https://goo.gl/maps/m49CoXVLUsWhngmK6" target="_blank" rel="noopener noreferrer nofollow"
+            >st. Vasilkivska, 7A<br />
+            Kyiv, 08132</a
+          >
+          <ul class="contacts-list list">
+            <li class="contacts-item">
+              <a href="tel:+380441111111" class="contacts-link link">+38 044 111 11 11</a>
+            </li>
+            <li class="contacts-item">
+              <a href="mailto:barbershop@email.com" class="contacts-link">barbershop@email.com</a>
+            </li>
+          </ul>
+        </address>
+        <p class="contacts-subtitle">Working hours</p>
+        <p class="contacts-schedule">Every day from 9:00 to 22:00</p>
       </section>
     </main>
     <footer>
