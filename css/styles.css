@@ -163,7 +163,7 @@ body {
 }
 .hero-wrap {
   background-color: #3d3e45;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/Slider-hero-3.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider-hero-3-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -242,7 +242,7 @@ body {
 .about-btn {
   color: var(--second-title-color);
 }
-/* ---------------PRICE------------------ */
+/* -------------PRICES------------ */
 .prices {
   background: #303030;
 }
@@ -350,21 +350,28 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 .barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .barbers-soc-item {
+  width: 44px;
+  height: 44px;
 }
 .barbers-soc-link {
   width: 100%;
   height: 100%;
-  background: #ffffff;
+  background: #ff6c00;
   border-radius: 50%;
+  display: block;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.barber-wrap {
+.barbers-wrap {
   padding-top: 30px;
 }
 /* ---------GALLERY----------- */
