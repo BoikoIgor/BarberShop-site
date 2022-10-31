@@ -43,7 +43,7 @@
         </nav>
         <div class="header-connect">
           <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="header-btn btn" type="button">Online-booking</button>
+          <button class="header-btn btn" type="button" data-modal-open>Online-booking</button>
         </div>
       </div>
     </header>
@@ -85,7 +85,7 @@
               We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that
               is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">Online-booking</button>
+            <button class="about-btn btn" type="button" data-modal-open>Online-booking</button>
           </div>
         </div>
       </section>
@@ -131,7 +131,7 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="prices-btn btn">Online-booking</button>
+          <button type="button" class="prices-btn btn" data-modal-open>Online-booking</button>
         </div>
       </section>
       <section class="benefits section">
@@ -354,11 +354,41 @@
             <use href="/img/sprite.svg#icon-cross"></use>
           </svg>
         </button>
+        <p class="modal-title">Modal title</p>
+        <form class="modal-form">
+          <label for="user-name" class="input-label"></label>
+          <div class="input-wrap">
+            <input type="text" name="user-name" class="modal-input" placeholder="write your name" maxlength="20" minlength="3" required id="user-name" />
+            <svg class="modal-input-icon">
+              <use href="./img/sprite.svg#icon-user"></use>
+            </svg>
+          </div>
+
+          <label class="input-label">
+            <span>Your mobile number </span>
+            <span class="input-wrap">
+              <input type="tel" name="user-tel" class="modal-input" placeholder="write your mobile +38" title="+38050 111 11 11" value="+380" pattern="\+?[0-9\s\-\(\)]+" required />
+              <svg class="modal-input-icon">
+                <use href="./img/sprite.svg#icon-user"></use>
+              </svg>
+            </span>
+          </label>
+
+          <input type="email" name="user-email" class="modal-input" placeholder="write your email" />
+
+          <div class="modal-field">
+            <label for="user-comment" class="user-comment"></label>
+            <textarea name="user-comment" id="user-comment" class="modal-text" placeholder="Comment"></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
