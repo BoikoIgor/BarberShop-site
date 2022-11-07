@@ -311,6 +311,13 @@
         <div class="container">
           <section class="online section">
             <h2 class="online-title section-title">Online-booking</h2>
+            <form class="online-form">
+              <input type="text" placeholder="Name*" class="online-input" name="online-name" />
+
+              <input type="tel" placeholder="Phone*" class="online-input" name="online-tel" />
+
+              <textarea type="text" placeholder="Message" class="online-textarea" name="online-text"> </textarea>
+            </form>
           </section>
           <section class="contacts section">
             <h2 class="contacts-title section-title">Contacts</h2>
@@ -336,7 +343,7 @@
     </main>
     <footer>
       <div class="container">
-        <p>&#169; Copyright 2020</p>
+        <p class="footer-copy">&#169; Copyright 2020</p>
         <ul class="footer-list list">
           <li class="footer-item">
             <a class="footer-link link" href="" target="_blank" rel="noopener noreferrer nofollow">Youtube</a>
@@ -392,6 +399,26 @@
             <label for="user-comment" class="input-label"><span>Comment</span></label>
             <textarea name="user-comment" id="user-comment" class="modal-text" placeholder="Comment here"></textarea>
           </div>
+
+          <div class="modal-field">
+            <input type="checkbox" name="privacy" id="privacy" class="input-check visually-hidden" />
+            <label for="privacy" class="check-text">Privacy agreement</label>
+          </div>
+
+          <ul class="filter-list list">
+            <li class="filter-item">
+              <input type="radio" name="filter" id="all" class="filter-check visually-hidden" />
+              <label for="all" class="filter-text">All</label>
+            </li>
+            <li class="filter-item">
+              <input type="radio" name="filter" id="aps" class="filter-check visually-hidden" />
+              <label for="aps" class="filter-text">Aps</label>
+            </li>
+            <li class="filter-item">
+              <input type="radio" name="filter" id="design" class="filter-check visually-hidden" />
+              <label for="design" class="filter-text">Design</label>
+            </li>
+          </ul>
 
           <button class="modal-btn btn" type="submit">Send</button>
         </form>

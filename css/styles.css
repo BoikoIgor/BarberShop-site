@@ -537,6 +537,32 @@ body {
 }
 .online-title {
   color: var(--main-title-color);
+  margin-bottom: 44px;
+}
+.online-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.online-input {
+  width: 270px;
+  height: 24px;
+  margin-bottom: 44px;
+  background-color: transparent;
+  border: none;
+  padding-bottom: 8px;
+  color: #9da4bd;
+  outline: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+}
+.online-input::placeholder {
+  font-weight: 600;
+  font-style: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition:  color 250ms linear;
+  color rgba(157, 164, 189, 0.4);
 }
 /* ----------CONTACTS---------- */
 .contacts {
@@ -587,6 +613,19 @@ body {
 /* ----------FOOTER---------- */
 footer {
   padding: 56px 0;
+}
+.footer-copy {
+  font-weight: 600;
+  font-style: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 40px;
 }
 .footer-item {
 }
@@ -712,3 +751,69 @@ footer {
 .modal-input:not(:focus):not(:placeholder-shown):invalid {
   background-color: rgba(255, 135, 71, 0.516);
 } */
+.modal-field {
+}
+.input-check {
+}
+.check-text {
+  font-size: 14px;
+  color: #3d3e45;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+/* .check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #171a24;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+.input-check:checked + .check-text::before {
+  background-color: #ff6c00;
+  border-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../img/check.svg);
+} */
+.check-text::before {
+  content: ' ';
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  border: 1px solid #9da4bd;
+  margin-right: 8px;
+  transition: border-color 250ms linear, background-color 250ms linear;
+}
+.check-text::after {
+  content: ' ';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #9da4bd;
+  margin-right: 8px;
+}
+.input-check:checked + .check-text::after {
+  border-color: transparent;
+  background-color: #ff6c00;
+  transform: translate(20px);
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 10px;
+}
+.filter-text {
+  padding: 6px 22px;
+  background-color: #191c266b;
+  display: block;
+  cursor: pointer;
+}
+.filter-check:checked + .filter-text {
+  background-color: #ff6c00;
+  color: #fff;
+}
