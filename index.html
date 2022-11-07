@@ -312,11 +312,10 @@
           <section class="online section">
             <h2 class="online-title section-title">Online-booking</h2>
             <form class="online-form">
-              <input type="text" placeholder="Name*" class="online-input" name="online-name" />
-
-              <input type="tel" placeholder="Phone*" class="online-input" name="online-tel" />
-
-              <textarea type="text" placeholder="Message" class="online-textarea" name="online-text"> </textarea>
+              <input type="text" placeholder="Name*" class="online-input online-item" name="online-name" />
+              <input type="tel" placeholder="Phone*" class="online-input online-item" name="online-tel" />
+              <textarea name="online-text" class="online-textarea online-item" placeholder="Message"></textarea>
+              <button type="submit" class="btn online-btn">Send</button>
             </form>
           </section>
           <section class="contacts section">
@@ -402,7 +401,13 @@
 
           <div class="modal-field">
             <input type="checkbox" name="privacy" id="privacy" class="input-check visually-hidden" />
-            <label for="privacy" class="check-text">Privacy agreement</label>
+            <label for="privacy" class="check-text">
+              <!-- <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./img/icons.svg#icon-check"></use></svg
+              ></span> -->
+              Privacy agreement</label
+            >
           </div>
 
           <ul class="filter-list list">
