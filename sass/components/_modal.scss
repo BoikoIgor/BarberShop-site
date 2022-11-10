@@ -23,6 +23,7 @@
   border-radius: 50%;
 }
 .modal-close {
+  @extend %list;
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -31,8 +32,6 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  display: flex;
-  align-items: center;
   justify-content: center;
   cursor: pointer;
 }
@@ -118,10 +117,9 @@
 } */
 /* ----TOOGLE-CHECK----- */
 .check-text {
+  @extend %list;
   font-size: 14px;
   color: #3d3e45;
-  display: flex;
-  align-items: center;
   position: relative;
   &::before {
     content: ' ';

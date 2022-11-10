@@ -19,10 +19,7 @@
     margin-bottom: 20px;
   }
   &-after-title {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
+    @include font(18px, 1.67, 400, 0.02);
     color: var(--third-title-color);
     margin-bottom: 20px;
   }

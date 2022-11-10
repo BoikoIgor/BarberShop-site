@@ -1,18 +1,16 @@
-.hero .container {
+.hero__container {
   display: flex;
 }
-.hero-soc {
+.soc {
+  @extend %list;
   width: 100px;
-  display: flex;
-  align-items: flex-end;
   padding-bottom: 40px;
   padding-left: 27px;
 }
-.hero-list {
-  display: flex;
+.soc__list {
+  @extend %list;
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
-  align-items: center;
   gap: 40px;
   &::before {
     content: '';
@@ -22,7 +20,7 @@
   }
 }
 
-.hero-wrap {
+.hero__wrap {
   background-color: #3d3e45;
   background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/slider-hero-3-min.jpg);
   background-repeat: no-repeat;
@@ -31,7 +29,7 @@
   padding: 272px 100px 208px 100px;
   flex-grow: 1;
 }
-.hero-link {
+.hero__link {
   font-size: 11px;
   font-weight: 600;
   line-height: 1.36;
@@ -44,11 +42,11 @@
   }
 }
 
-.hero-pre-title {
+.hero__pre-title {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
 }
-.hero-title {
+.hero__title {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -57,7 +55,7 @@
   line-height: calc(85 / 72);
   color: #ffffff;
 }
-.hero-after-title {
+.hero__after-title {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.67;
