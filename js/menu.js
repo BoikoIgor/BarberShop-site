@@ -7,17 +7,17 @@
     menuList: document.querySelector('.mob-menu-list'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleMenu);
-  refs.closeModalBtn.addEventListener('click', toggleMenu);
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
   refs.menuList.addEventListener('click', removeMenu);
 
-  function toggleModal() {
+  function toggleMenu() {
     refs.menu.classList.toggle('is-hidden');
     refs.body.classList.toggle('no-scroll');
   }
 
   function removeMenu() {
-    refs.menu.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scroll');
+    refs.menu.classList.add('is-hidden');
+    refs.body.classList.remove('no-scroll');
   }
 })();
