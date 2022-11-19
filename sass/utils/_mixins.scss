@@ -43,13 +43,16 @@
     @content;
   }
 }
-
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
 // @mixin media($size) {
 //   @media and (min-width: $size) {
 //     @content;
 //   }
 // }
-
 @mixin calc($count, $gap) {
   width: calc((100% - ($count - 1) * $gap) / $count);
 }

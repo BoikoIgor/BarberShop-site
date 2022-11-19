@@ -13,6 +13,11 @@
 }
 .header__container {
   @extend %list;
+  // position: absolute;
+  // top: 0;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  // margin: 0 auto;
 }
 .navigation__logo {
   margin-right: 131px;
