@@ -1,0 +1,58 @@
+@mixin font($size: 16px, $height: 1.2, $weight: 500, $spacing: 0.02) {
+  font-size: $size;
+  //   font-size: $size+px;
+  line-height: $height;
+  //   line-height: $height / $size;
+  font-weight: $weight;
+  letter-spacing: $spacing + em;
+}
+// ----MIXIN-EXAMPLES------
+.text {
+  @include font(20px, 1.4);
+  //   font-size: 20px;
+  //   line-height: 1.4;
+  //   font-weight: 500;
+  //   letter-spacing: 0.02em;
+}
+.link {
+  @include font($weight: 600, $spacing: 0.03);
+  //   font-size: 16px;
+  //   line-height: 1.2;
+  //   font-weight: 600;
+  //   letter-spacing: 0.03em;
+}
+.new-text {
+  @include font(20px, calc(16 / 12), 400, 0.02);
+  //   font-size: 20px;
+  //   line-height: 1.1;
+  //   font-weight: 400;
+  //   letter-spacing: 0.02em;
+}
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+// @mixin media($size) {
+//   @media and (min-width: $size) {
+//     @content;
+//   }
+// }
+@mixin calc($count, $gap) {
+  width: calc((100% - ($count - 1) * $gap) / $count);
+}

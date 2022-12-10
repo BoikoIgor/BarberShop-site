@@ -1,0 +1,37 @@
+.about {
+  &-pre-title {
+    color: var(--second-title-color);
+    margin-bottom: 20px;
+  }
+  &-list {
+    display: flex;
+    gap: 30px;
+  }
+  &-container {
+    display: flex;
+    gap: 30px;
+  }
+  &-wrap {
+    max-width: 470px;
+  }
+  &-title {
+    color: var(--second-title-color);
+    margin-bottom: 20px;
+  }
+  &-after-title {
+    @include font(18px, 1.67, 400, 0.02);
+    color: var(--third-title-color);
+    margin-bottom: 20px;
+  }
+  &-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--third-title-color);
+    margin-bottom: 42px;
+  }
+  &-btn {
+    color: var(--second-title-color);
+  }
+}
