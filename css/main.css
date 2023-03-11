@@ -797,8 +797,20 @@ body {
   margin-bottom: 20px;
 }
 .about-list {
-  display: flex;
-  gap: 30px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-list {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 .about-container {
   display: flex;

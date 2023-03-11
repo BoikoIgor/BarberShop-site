@@ -4,8 +4,16 @@
     margin-bottom: 20px;
   }
   &-list {
-    display: flex;
-    gap: 30px;
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    @include desktop {
+      flex-direction: row;
+      gap: 30px;
+    }
   }
   &-container {
     display: flex;
