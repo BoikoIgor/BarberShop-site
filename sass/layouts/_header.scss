@@ -31,7 +31,8 @@
 .header__container {
   @extend %list;
   display: flex;
-  // align-items: center;
+
+  align-items: baseline;
   // position: absolute;
   // top: 0;
   // padding-top: 32px;
@@ -63,19 +64,21 @@
   @include tablet {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     margin-left: auto;
   }
   @include desktop {
+    align-items: center;
     flex-direction: row;
   }
 }
 .menu {
-  display: flex;
-  gap: 30px;
   @include tablet {
     gap: 20px;
+  }
+  @include desktop {
+    gap: 30px;
   }
 }
 .menu__link,
@@ -86,6 +89,11 @@
   color: var(--main-title-color);
   transition: color 200ms linear;
 }
+.connect__tel.link {
+  display: flex;
+  margin-left: 63px;
+}
+
 .menu__link:hover,
 .menu__link:focus,
 .connect__tel:hover,
@@ -98,6 +106,11 @@
   margin-right: 17px;
   @include tablet {
     margin-bottom: 20px;
+    margin-right: 0;
+  }
+  @include desktop {
+    margin-bottom: 0;
+    margin-right: 17px;
   }
 }
 .menu__link.current {
