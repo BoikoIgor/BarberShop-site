@@ -102,6 +102,10 @@ body {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -544,6 +548,114 @@ body {
 
 .menu__link.current {
   color: var(--accent-color);
+}
+
+.mobile-menu__button {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  fill: var(--main-btn-color);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.menu-open {
+  margin-left: auto;
+}
+
+.mobile-menu__button:focus,
+.mobile-menu__button:hover {
+  fill: var(--accent-color);
+}
+
+.menu-close {
+  margin-left: auto;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu__cross {
+  fill: var(--second-title-color);
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 30vw;
+  top: 0;
+  width: 70vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: var(--main-btn-color);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mobile-menu__link,
+.mobile-menu__tel {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.1em;
+  color: var(--second-title-color);
+}
+
+.mobile-menu__link:hover,
+.mobile-menu__link:focus,
+.mobile-soc-list__link:hover,
+.mobile-soc-list__link:focus {
+  color: var(--accent-color);
+}
+
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mobile-menu__list {
+  margin-bottom: 50px;
+}
+
+.mobile-menu__btn {
+  display: block;
+  margin-top: 24px;
+}
+
+.mobile-menu__connect {
+  margin-bottom: 64px;
+}
+
+.mobile-soc-list__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.3571428571;
+  letter-spacing: 0.2em;
+  color: var(--second-title-color);
+}
+
+.mobile-soc-list__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.mobile-soc-list {
+  position: relative;
+  padding-left: 100px;
+}
+
+.mobile-soc-list::before {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--second-title-color);
 }
 
 .hero__container {

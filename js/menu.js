@@ -1,10 +1,9 @@
 (() => {
   const refs = {
     openMenuBtn: document.querySelector('.menu-open'),
-    closeMenuBtn: document.querySelector('[data-menu-close]'),
-    menu: document.querySelector('[data-menu]'),
-    body: document.querySelector('body'),
-    menuList: document.querySelector('.mob-menu-list'),
+    closeMenuBtn: document.querySelector('.menu-close'),
+    menu: document.querySelector('.mobile-menu'),
+    menuList: document.querySelector('.mobile-menu__list'),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
@@ -12,12 +11,12 @@
   refs.menuList.addEventListener('click', removeMenu);
 
   function toggleMenu() {
-    refs.menu.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scroll');
+    document.body.classList.toggle('no-scroll');
+    refs.menu.classList.toggle('visually-hidden');
+    refs.openMenuBtn.classList.toggle('visually-hidden');
   }
-
   function removeMenu() {
-    refs.menu.classList.add('is-hidden');
-    refs.body.classList.remove('no-scroll');
+    refs.menu.classList.add('visually-hidden');
+    document.body.classList.remove('no-scroll');
   }
 })();

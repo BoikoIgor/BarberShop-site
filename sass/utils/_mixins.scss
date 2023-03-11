@@ -56,3 +56,8 @@
 @mixin calc($count, $gap) {
   width: calc((100% - ($count - 1) * $gap) / $count);
 }
+
+@mixin transition($duration: 300ms, $timing-function: linear) {
+  transition-duration: $duration;
+  transition-timing-function: $timing-function;
+}
