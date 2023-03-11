@@ -1,8 +1,15 @@
 .header {
   position: absolute;
+  width: 100%;
   top: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 31px;
+  @include tablet {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+  }
 }
 .menu {
   display: flex;
@@ -13,6 +20,8 @@
 }
 .header__container {
   @extend %list;
+  display: flex;
+  // align-items: center;
   // position: absolute;
   // top: 0;
   // padding-top: 32px;
@@ -21,20 +30,37 @@
 }
 .navigation__logo {
   margin-right: 131px;
+  @include tablet {
+    margin-right: 62px;
+  }
 }
 .logo-icon {
   fill: var(--second-title-color);
 }
 .header__connect {
-  margin-left: auto;
-  // display: none;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
 }
 .menu {
   display: flex;
   gap: 30px;
+  @include tablet {
+    gap: 20px;
+  }
 }
 .menu__link,
-.menu__tel {
+.menu__tel,
+.connect__tel {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--main-title-color);
@@ -49,6 +75,10 @@
 .connect__btn.btn {
   color: var(--main-btn-color);
   margin-left: 43px;
+  margin-right: 17px;
+  @include tablet {
+    margin-bottom: 20px;
+  }
 }
 .menu__link.current {
   color: var(--accent-color);
