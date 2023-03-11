@@ -263,10 +263,6 @@ body {
   font-size: 13px;
   color: var(--accent-color);
 }
-.modal-input:-ms-input-placeholder {
-  font-size: 13px;
-  color: var(--accent-color);
-}
 .modal-input::placeholder {
   font-size: 13px;
   color: var(--accent-color);
@@ -285,10 +281,6 @@ body {
   fill: var(--accent-color);
 }
 .modal-text::-moz-placeholder {
-  font-size: 13px;
-  color: var(--accent-color);
-}
-.modal-text:-ms-input-placeholder {
   font-size: 13px;
   color: var(--accent-color);
 }
@@ -420,9 +412,18 @@ body {
 
 .header {
   position: absolute;
+  width: 100%;
   top: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 31px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 20px;
+  }
 }
 
 .menu {
@@ -430,8 +431,17 @@ body {
   gap: 30px;
 }
 
+.header__container {
+  display: flex;
+}
+
 .navigation__logo {
   margin-right: 131px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__logo {
+    margin-right: 62px;
+  }
 }
 
 .logo-icon {
@@ -439,17 +449,36 @@ body {
 }
 
 .header__connect {
-  margin-left: auto;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .header__connect {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__connect {
+    flex-direction: row;
+  }
 }
 
 .menu {
   display: flex;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .menu {
+    gap: 20px;
+  }
+}
 
 .menu__link,
-.menu__tel {
+.menu__tel,
+.connect__tel {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--main-title-color);
@@ -466,6 +495,12 @@ body {
 .connect__btn.btn {
   color: var(--main-btn-color);
   margin-left: 43px;
+  margin-right: 17px;
+}
+@media screen and (min-width: 768px) {
+  .connect__btn.btn {
+    margin-bottom: 20px;
+  }
 }
 
 .menu__link.current {
@@ -495,6 +530,7 @@ body {
   display: none;
   padding-bottom: 40px;
   padding-left: 27px;
+  align-items: flex-end;
 }
 @media screen and (min-width: 768px) {
   .soc {
@@ -974,9 +1010,6 @@ body {
 .online-item:focus::-moz-placeholder {
   color: #ffffff;
 }
-.online-item:focus:-ms-input-placeholder {
-  color: #ffffff;
-}
 .online-item:focus::placeholder {
   color: #ffffff;
 }
@@ -987,16 +1020,6 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   -moz-transition: color 200ms linear;
-  transition: color 200ms linear;
-  color: rgba(157, 164, 189, 0.4);
-}
-.online-item:-ms-input-placeholder {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  -ms-transition: color 200ms linear;
   transition: color 200ms linear;
   color: rgba(157, 164, 189, 0.4);
 }
