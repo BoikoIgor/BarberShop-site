@@ -11,12 +11,22 @@
     padding-right: 20px;
   }
 }
-.menu {
-  display: flex;
-  gap: 30px;
+.menu.list {
+  display: none;
+  @include tablet {
+    display: flex;
+    gap: 20px;
+  }
+  @include desktop {
+    gap: 30px;
+  }
 }
 .navigation {
   @extend %list;
+  // display: none;
+  // @include tablet {
+  //   display: flex;
+  // }
 }
 .header__container {
   @extend %list;
@@ -29,13 +39,23 @@
   // margin: 0 auto;
 }
 .navigation__logo {
-  margin-right: 131px;
+  margin-right: 31px;
+  margin-left: 31px;
   @include tablet {
-    margin-right: 62px;
+    display: flex;
+    margin-right: 51px;
+    margin-left: 10px;
+    fill: var(--main-title-color);
+  }
+  @include desktop {
+    margin-right: 131px;
   }
 }
 .logo-icon {
-  fill: var(--second-title-color);
+  fill: var(--main-title-color);
+  @include tablet {
+    fill: var(--second-title-color);
+  }
 }
 .header__connect {
   display: none;
