@@ -107,7 +107,6 @@
 }
 .mobile-menu__button {
   display: inline-flex;
-  // margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -123,17 +122,17 @@
 .mobile-menu__button:focus,
 .mobile-menu__button:hover {
   fill: var(--accent-color);
-  // @include transition();
-  // transition-property: fill;
 }
 .menu-close {
-  margin-left: auto;
   display: block;
   margin-left: auto;
   margin-bottom: 30px;
   padding: 0;
   border: none;
   background-color: transparent;
+  @include mobile {
+    margin-left: 50vw;
+  }
 }
 .mobile-menu__cross {
   fill: var(--second-title-color);

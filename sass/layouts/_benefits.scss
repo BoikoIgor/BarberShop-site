@@ -7,10 +7,13 @@
   padding-top: 9px;
 }
 .benefits-list {
-  display: flex;
-  width: 370px;
-  flex-wrap: wrap;
-  margin-right: 130px;
+  display: none;
+  @include tablet {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+    margin-right: 130px;
+  }
 }
 .benefits-item {
   width: 170px;

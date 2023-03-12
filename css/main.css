@@ -573,13 +573,17 @@ body {
 }
 
 .menu-close {
-  margin-left: auto;
   display: block;
   margin-left: auto;
   margin-bottom: 30px;
   padding: 0;
   border: none;
   background-color: transparent;
+}
+@media screen and (min-width: 480px) {
+  .menu-close {
+    margin-left: 50vw;
+  }
 }
 
 .mobile-menu__cross {
@@ -923,10 +927,15 @@ body {
 }
 
 .benefits-list {
-  display: flex;
-  width: 370px;
-  flex-wrap: wrap;
-  margin-right: 130px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+    margin-right: 130px;
+  }
 }
 
 .benefits-item {
@@ -1144,7 +1153,13 @@ body {
 }
 
 .online {
-  width: calc(50% - 15px);
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .online {
+    display: block;
+    width: calc(50% - 15px);
+  }
 }
 
 .online-title {
@@ -1212,9 +1227,11 @@ body {
   color: var(--main-btn-color);
 }
 
-.contacts {
-  width: calc(50% - 15px);
-  padding-left: 100px;
+@media screen and (min-width: 768px) {
+  .contacts {
+    width: calc(50% - 15px);
+    padding-left: 100px;
+  }
 }
 
 .contacts-title {
@@ -1257,9 +1274,9 @@ body {
 }
 
 .contacts-schedule {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: #9da4bd;
 }
 

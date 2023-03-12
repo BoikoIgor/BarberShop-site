@@ -1,6 +1,8 @@
 .contacts {
-  width: calc(50% - 15px);
-  padding-left: 100px;
+  @include tablet {
+    width: calc(50% - 15px);
+    padding-left: 100px;
+  }
 }
 .contacts-title {
   color: var(--main-title-color);
@@ -36,8 +38,8 @@
   margin-bottom: 20px;
 }
 .contacts-schedule {
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.67;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: #9da4bd;
 }

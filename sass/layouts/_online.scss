@@ -1,5 +1,9 @@
 .online {
-  width: calc(100% / 2 - 15px);
+  display: none;
+  @include tablet {
+    display: block;
+    width: calc(100% / 2 - 15px);
+  }
 }
 .online-title {
   color: var(--main-title-color);
