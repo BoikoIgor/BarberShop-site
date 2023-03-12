@@ -1,2 +1,2 @@
-# BarberShop-68-frontend
-<img width="598" alt="image" src="https://user-images.githubusercontent.com/111757412/224518057-66d687ad-bb9d-47a8-a531-f9e93357e453.png">
+Second practice project: WebSite for Barbershop,  HTML+CSS+JS.
+<img width="510" alt="image" src="https://user-images.githubusercontent.com/111757412/224518291-1c524d71-7810-40d1-9702-ed76a5a07787.png">
