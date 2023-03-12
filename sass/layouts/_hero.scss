@@ -37,7 +37,7 @@
 
 .hero__wrap {
   background-color: #3d3e45;
-  background-image: var(--gradient), url(../../img/hero/hero-bg-mob-1x.jpg);
+  background-image: var(--gradient), url(../img/hero/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -48,16 +48,16 @@
   }
   @include tablet {
     padding: 272px 100px 237px 100px;
-    background-image: var(--gradient), url(../../img/hero/hero-bg-tab-1x.jpg);
+    background-image: var(--gradient), url(../img/hero/hero-bg-tab-1x.jpg);
     @include retina {
-      background-image: var(--gradient), url(../../img/hero/hero-bg-tab-2x.jpg);
+      background-image: var(--gradient), url(../img/hero/hero-bg-tab-2x.jpg);
     }
   }
   @include desktop {
     padding: 272px 100px 208px 100px;
-    background-image: var(--gradient), url(../../img/hero/hero-bg-desk-1x.jpg);
+    background-image: var(--gradient), url(../img/hero/hero-bg-desk-1x.jpg);
     @include retina {
-      background-image: var(--gradient), url(../../img/hero/hero-bg-desk-2x.jpg);
+      background-image: var(--gradient), url(../img/hero/hero-bg-desk-2x.jpg);
     }
   }
 }
